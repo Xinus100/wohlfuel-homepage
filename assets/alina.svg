@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 600" role="img" aria-label="Platzhalter für Porträtfoto">
+  <rect width="480" height="600" fill="#e3dccf"/>
+  <circle cx="240" cy="230" r="90" fill="#c9c0ac"/>
+  <path d="M90 520c0-95 67-160 150-160s150 65 150 160z" fill="#c9c0ac"/>
+  <text x="240" y="565" text-anchor="middle" font-family="Georgia, serif" font-size="24" fill="#8a8574">Foto folgt</text>
+</svg>

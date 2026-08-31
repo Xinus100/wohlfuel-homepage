@@ -1,0 +1,13 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+
+# Node (später, wenn ein Backend / Build dazukommt)
+node_modules/
+dist/
+.env
+.env.local
