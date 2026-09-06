@@ -184,21 +184,44 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.2; 
 .card h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
 .card p { color: var(--color-muted); }
 
-/* ---------- Über mich ---------- */
-.about {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.4fr);
-  gap: clamp(1.5rem, 5vw, 3.5rem);
-  align-items: center;
-}
+/* ---------- Über WOHLRAUM ---------- */
+.about { max-width: 44rem; margin-inline: auto; }
 
+.about__media {
+  width: min(340px, 75%);
+  margin: 0 auto 2.5rem;
+}
 .about__media img {
   border-radius: var(--radius);
   width: 100%;
-  object-fit: cover;
 }
 
-.about__text p { margin-top: 1rem; color: var(--color-muted); }
+.about__text > p { margin-top: 1rem; color: var(--color-muted); }
+
+.about__lead {
+  font-size: 1.15rem;
+  color: var(--color-text) !important;
+  margin-top: 0.5rem;
+}
+
+.about__text h3 {
+  font-size: 1.6rem;
+  margin-top: 2.5rem;
+}
+
+.about__mantra {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  text-align: center;
+  color: var(--color-accent-dark) !important;
+  margin: 1.75rem 0;
+}
+
+.about__closing {
+  margin-top: 1.75rem;
+  font-style: italic;
+  color: var(--color-text) !important;
+}
 
 /* ---------- Stundenplan ---------- */
 .schedule {
@@ -228,39 +251,7 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.2; 
 .prices strong { color: var(--color-text); font-weight: 600; }
 
 /* ---------- Kontakt ---------- */
-.contact__details { margin: 1rem 0 2rem; font-size: 1.1rem; }
-
-.contact__form {
-  display: grid;
-  gap: 1rem;
-  max-width: 32rem;
-}
-
-.contact__form label {
-  display: grid;
-  gap: 0.35rem;
-  font-size: 0.9rem;
-  color: var(--color-muted);
-}
-
-.contact__form input,
-.contact__form textarea {
-  font: inherit;
-  padding: 0.7rem 0.85rem;
-  border: 1px solid var(--color-line);
-  border-radius: 8px;
-  background: #fff;
-  color: var(--color-text);
-}
-.contact__form input:focus,
-.contact__form textarea:focus {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 1px;
-}
-
-.contact__form .btn { justify-self: start; cursor: pointer; border: 0; }
-
-.contact__note { font-size: 0.9rem; color: var(--color-accent-dark); }
+.contact__details { margin: 1rem 0 0; font-size: 1.15rem; }
 
 /* ---------- Footer ---------- */
 .site-footer {
@@ -296,8 +287,6 @@ h1, h2, h3 { font-family: var(--font-head); font-weight: 600; line-height: 1.2; 
   .nav__menu li { border-top: 1px solid var(--color-line); }
   .nav__menu a { display: block; padding: 0.9rem 1.25rem; }
 
-  .about { grid-template-columns: 1fr; }
-  .about__media { order: -1; max-width: 360px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

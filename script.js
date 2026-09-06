@@ -21,17 +21,3 @@ if (toggle && menu) {
 // Jahr im Footer
 const yearEl = document.getElementById("year");
 if (yearEl) yearEl.textContent = new Date().getFullYear();
-
-// Kontaktformular: noch kein Backend -> Hinweis anzeigen
-const form = document.querySelector(".contact__form");
-if (form) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-    const note = form.querySelector(".contact__note");
-    if (note) {
-      note.hidden = false;
-      note.textContent =
-        "Das Formular ist noch nicht aktiv. Bitte schreib mir vorerst direkt per E-Mail.";
-    }
-  });
-}
